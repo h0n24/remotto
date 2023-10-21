@@ -204,3 +204,38 @@ body:hover #refreshButton {
     }
   }
 }
+
+#pictureInPictureButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffffff38;
+  }
+}
+
+#pictureInPictureButtonInner {
+  background-color: #ff0000c2;
+  font-size: 12px;
+  padding: 5px;
+  color: #fff;
+}
+
+#sharingInfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: auto;
+  background-color: #ff0000c2;
+  font-size: 12px;
+  padding: 5px;
+  color: #fff;
+  cursor: pointer;
+}
