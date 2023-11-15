@@ -11,6 +11,7 @@ let hasRoomModerator = false;
 function whenMemberIsModerator(member: any) {
   if (member._role === "moderator") {
     hasRoomModerator = true;
+
     const moderatorId = member._id;
     createPictureInPicture(moderatorId);
   }
@@ -53,7 +54,8 @@ createElementsOnStart();
 setInterval(function () {
   detectConnectedMembers();
 
-  showInfoIfNotSharingScreen();
+  // sadly remotto has a bug, is not showing the info if the user is not sharing screen
+  // showInfoIfNotSharingScreen();
 }, 1000);
 
 // set timeout so the moderator can be detected

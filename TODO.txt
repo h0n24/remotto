@@ -1,3 +1,10 @@
+automaticky sdílení v 1. kvalitě
+když je alttabnutý - nechat zmizet chybovou hlášku u okna
+otestovat ve firefoxu
+
+---
+
+
 CHECK:
 
 - can we utilize "APP.conference.createInitialLocalTracksAndConnect()" to actually refresh the connection?

@@ -17,7 +17,7 @@ function toggleMicrophone() {
 }
 
 function showPictureInPicture(moderatorId: any) {
-  const videoID = `#remoteVideo_${moderatorId}-video-1`;
+  const videoID = `[id^='remoteVideo_${moderatorId}-video']`;
 
   // Listen for visibility change event
   document.addEventListener("visibilitychange", () => {
@@ -34,6 +34,8 @@ function showPictureInPicture(moderatorId: any) {
         // Request picture-in-picture mode
         try {
           if (document.pictureInPictureElement) return;
+
+          console.log("video is ready?");
 
           if (video.readyState === 4) {
             // it's loaded
