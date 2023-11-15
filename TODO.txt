@@ -1,38 +1,5 @@
-automaticky sdílení v 1. kvalitě
-když je alttabnutý - nechat zmizet chybovou hlášku u okna
 otestovat ve firefoxu
 
 ---
-
-
-CHECK:
-
-- can we utilize "APP.conference.createInitialLocalTracksAndConnect()" to actually refresh the connection?
-
-APP.conference.createInitialLocalTracksAndConnect(APP.conference.roomName)
-
-/**
-  * Creates local media tracks and connects to a room. Will show error
-  * dialogs in case accessing the local microphone and/or camera failed. Will
-  * show guidance overlay for users on how to give access to camera and/or
-  * microphone.
-  * @param {string} roomName
-  * @param {object} options
-  * @param {boolean} options.startAudioOnly=false - if <tt>true</tt> then
-  * only audio track will be created and the audio only mode will be turned
-  * on.
-  * @param {boolean} options.startScreenSharing=false - if <tt>true</tt>
-  * should start with screensharing instead of camera video.
-  * @param {boolean} options.startWithAudioMuted - will start the conference
-  * without any audio tracks.
-  * @param {boolean} options.startWithVideoMuted - will start the conference
-  * without any video tracks.
-  * @returns {Promise.<JitsiLocalTrack[], JitsiConnection>}
-  */
-createInitialLocalTracksAndConnect(roomName, options = {}) {}
-
-
-
------------
 
 we can potentially save logs from the students with: APP.conference.saveLogs()

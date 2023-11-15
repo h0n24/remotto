@@ -242,18 +242,57 @@ body:hover #refreshButton {
 
 // new update -> change apsolute positioning to relative and utilize flex
 
-// body {
-//   .tile-view .remote-videos > div .videocontainer {
-//     position: relative !important;
-//     left: auto !important;
-//     top: auto !important;
-//   }
+body {
+  .tile-view .remote-videos > div .videocontainer {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+  }
 
-//   .tile-view .remote-videos > div {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     justify-content: center;
-//     flex-wrap: wrap !important;
-//   }
-// }
+  .tile-view .remote-videos > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .videocontainer.display-avatar-only {
+    &:has(+ .display-video) {
+      display: none !important;
+      // width: 200px !important;
+      // min-width: 200px !important;
+      // margin-right: -200px !important;
+      // z-index: 2;
+
+      // div {
+      //   display: none !important;
+      // }
+
+      // .tile-view-mode {
+      //   display: flex !important;
+      // }
+    }
+  }
+
+  // hide internet status if its good
+  .jss26.status-high {
+    visibility: hidden;
+  }
+
+  // hide hang up button
+  .toolbox-button-wth-dialog.context-menu + div {
+    display: none;
+  }
+
+  // hide smileys
+  .jitsi-icon.jitsi-icon-default.settings-button-small-icon {
+    display: none;
+  }
+
+  // hide annoying animation on the right side
+  .jss9,
+  .jss2 {
+    transition: none !important;
+  }
+}

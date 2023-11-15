@@ -5,6 +5,7 @@ import refreshButton from "./ts/addRefreshButton";
 import addCustomContextMenu from "./ts/addCustomContextMenu";
 import createPictureInPicture from "./ts/showPictureInPicture";
 import showInfoIfNotSharingScreen from "./ts/showInfoIfNotSharingScreen";
+import onMouseButtonEvent from "./ts/onMouseButtonEvent";
 
 let hasRoomModerator = false;
 
@@ -67,4 +68,7 @@ setTimeout(() => {
     // right click menu
     addCustomContextMenu();
   }
+
+  // on middle button click, scroll up, scroll down
+  onMouseButtonEvent();
 }, 1000);
