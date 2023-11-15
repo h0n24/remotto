@@ -239,3 +239,21 @@ body:hover #refreshButton {
   color: #fff;
   cursor: pointer;
 }
+
+// new update -> change apsolute positioning to relative and utilize flex
+
+// body {
+//   .tile-view .remote-videos > div .videocontainer {
+//     position: relative !important;
+//     left: auto !important;
+//     top: auto !important;
+//   }
+
+//   .tile-view .remote-videos > div {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: center;
+//     flex-wrap: wrap !important;
+//   }
+// }

@@ -43,15 +43,16 @@ function updateLastTalking() {
   const lastTalkingTwo = document.querySelector("#lastTalkingTwo");
   const lastTalkingThree = document.querySelector("#lastTalkingThree");
 
-  if (lastTalkingOne) {
+  // if its not undefined
+  if (lastTalkingOne !== undefined && lastTalkingOne !== null) {
     lastTalkingOne.innerHTML = statsTalking[0];
   }
 
-  if (lastTalkingTwo) {
+  if (lastTalkingTwo !== undefined && lastTalkingTwo !== null) {
     lastTalkingTwo.innerHTML = statsTalking[1];
   }
 
-  if (lastTalkingThree) {
+  if (lastTalkingThree !== undefined && lastTalkingThree !== null) {
     lastTalkingThree.innerHTML = statsTalking[2];
   }
 }
